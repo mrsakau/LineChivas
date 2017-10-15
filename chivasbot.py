@@ -4,27 +4,17 @@ from LineAlpha.Gen.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
-cl = LineAlpha.LINE()
+cl = LINETCR.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
-kk = LineAlpha.LINE()
-kk.login(qr=True)
-kk.loginResult()
-
-ki = LineAlpha.LINE()
-ki.login(qr=True)
-ki.loginResult()
-
-kc = LineAlpha.LINE()
-kc.login(qr=True)
-kc.loginResult()
+ki = kk = kc = cl 
 
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" Chivas Bot
+helpMessage =""" Sakau Bot
 [Id︎]
 [Mid]
 [Me︎]
@@ -83,7 +73,7 @@ Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["YOUR_MID_HERE"]
+admin=["u2c1b0efa99dcaefceced1d047f4a63f0"]
 wait = {
     'contact':True,
     'autoJoin':True,
@@ -99,7 +89,7 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":True,
-    "cName":"Chivas ",
+    "cName":"Sakau Bot ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
