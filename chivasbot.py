@@ -4,7 +4,7 @@ from LineAlpha.Gen.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
-cl = LINETCR.LINE()
+cl = LineAlpha.LINE()
 cl.login(qr=True)
 cl.loginResult()
 
